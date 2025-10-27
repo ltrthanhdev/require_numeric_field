@@ -1,7 +1,7 @@
 {
     'name': 'Addons: Numeric Field Required',
     'description': 'Make numeric field be required before saving',
-    'author': 'Le Tri Thanh',
+    'author': 'LTrThanh',
     'depends': ['base', 'web'],
     'application': False,
     'version': '18.0.0.0',

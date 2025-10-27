@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Enhanced Numeric Field Validation</title>
+<style>
+    body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9fafb;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+    }
+    .module-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 30px;
+    }
+    h1 {
+        color: #1f4e79;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    p.description {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 25px;
+    }
+    h2 {
+        color: #1f4e79;
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #1f4e79;
+        display: inline-block;
+        padding-bottom: 4px;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    ul li {
+        margin-bottom: 12px;
+        padding-left: 28px;
+        position: relative;
+        font-size: 15px;
+    }
+    ul li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #1f4e79;
+        font-weight: bold;
+    }
+    .note {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #eaf3ff;
+        border-left: 4px solid #1f4e79;
+        border-radius: 6px;
+        font-size: 15px;
+        color: #1f4e79;
+    }
+</style>
+</head>
+<body>
+    <div class="module-container">
+        <h1>Enhanced Numeric Field Validation</h1>
+        <p class="description">
+            By default, Odoo skips validity checks on required numeric fields. This module enhances the functionality of numeric fields by restricting 0 as a value and ensuring proper numeric input.
+        </p>
+
+        <h2>✨ Features</h2>
+        <ul>
+            <li>Prevents users from entering 0 in required numeric fields.</li>
+            <li>Displays a warning if a user tries to leave a numeric field empty.</li>
+            <li>Improves data integrity by enforcing proper numeric input.</li>
+        </ul>
+
+        <h2>⚡ Usage</h2>
+        <ul>
+            <li>When creating or editing a record with a required numeric field, users will see a warning if they enter 0 or leave the field blank.</li>
+        </ul>
+
+        <h2>🏆 Benefits</h2>
+        <ul>
+            <li>Ensures numeric fields always have valid, non-zero values.</li>
+            <li>Reduces errors caused by missing or invalid numeric input.</li>
+        </ul>
+
+        <div class="note">
+            Install this module to enhance the behavior of numeric fields and enforce proper validation automatically.
+        </div>
+    </div>
+</body>
+</html>

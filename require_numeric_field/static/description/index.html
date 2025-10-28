@@ -1,72 +1,67 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <title>Enhanced Numeric Field Validation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-<!--Header Ends-->
 <section class="oe_container"
-         style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);padding: 30px;">
-    <h1 style="color: #1f4e79; font-size: 28px; margin-bottom: 10px;">Enhanced Numeric Field Validation</h1>
-    <p style="font-size: 16px; color: #555; margin-bottom: 25px;">
+         style="background-color:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);padding:30px;">
+    <h1 style="color:#1f4e79;font-size:28px;margin-bottom:10px;">Enhanced Numeric Field Validation</h1>
+    <p style="font-size:16px;color:#555;margin-bottom:25px;">
         By default, Odoo skips validity checks on required numeric fields. This module enhances the functionality of
         numeric fields by restricting 0 as a value and ensuring proper numeric input.
     </p>
 
-    <h2 style="color: #1f4e79; font-size: 20px; margin-top: 25px; margin-bottom: 10px; border-bottom: 2px solid #1f4e79; display: inline-block; padding-bottom: 4px;">
+    <h2 style="color:#1f4e79;font-size:20px;margin-top:25px;margin-bottom:10px;border-bottom:2px solid #1f4e79;display:inline-block;padding-bottom:4px;">
         ✨ Features</h2>
-    <ul style="list-style: none !important; margin: 0 !important; padding-left: 0 !important;">
-        <li style="list-style-type: none !important; margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px;">
-            <span style="position: absolute; left: 0; color: #1f4e79; font-weight: bold;">✔</span>
+    <ul class="list-unstyled">
+        <li style="margin-bottom:12px;font-size:15px;">
+            <i class="fa fa-check" style="color:#1f4e79;margin-right:8px;"></i>
             Prevents users from entering 0 in required numeric fields.
         </li>
-        <li style="list-style-type: none !important; margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px;">
-            <span style="position: absolute; left: 0; color: #1f4e79; font-weight: bold;">✔</span>
+        <li style="margin-bottom:12px;font-size:15px;">
+            <i class="fa fa-check" style="color:#1f4e79;margin-right:8px;"></i>
             Displays a warning if a user tries to leave a numeric field empty.
         </li>
-        <li style="list-style-type: none !important; margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px;">
-            <span style="position: absolute; left: 0; color: #1f4e79; font-weight: bold;">✔</span>
+        <li style="margin-bottom:12px;font-size:15px;">
+            <i class="fa fa-check" style="color:#1f4e79;margin-right:8px;"></i>
             Improves data integrity by enforcing proper numeric input.
         </li>
-        <li style="list-style-type: none !important; margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px;">
-            <span style="position: absolute; left: 0; color: #1f4e79; font-weight: bold;">✔</span>
+        <li style="margin-bottom:12px;font-size:15px;">
+            <i class="fa fa-check" style="color:#1f4e79;margin-right:8px;"></i>
             Allows developers to define a context key
-            <code style="background-color: #f4f4f4; padding: 2px 5px; border-radius: 4px; font-family: 'Consolas', monospace; font-size: 14px; color: #1f4e79;">skip_check_requirement</code>
+            <code style="background-color:#f4f4f4;padding:2px 5px;border-radius:4px;font-family:'Consolas',monospace;font-size:14px;color:#1f4e79;">skip_check_requirement</code>
             to bypass the numeric validation rule when necessary.
-            <pre style="background-color: #f8f9fa; border-left: 4px solid #1f4e79; padding: 10px 15px; border-radius: 6px; margin-top: 8px; font-size: 14px; color: #333; font-family: 'Consolas', monospace;">Example:
+            <pre style="background-color:#f8f9fa;border-left:4px solid #1f4e79;padding:10px 15px;border-radius:6px;margin-top:8px;font-size:14px;color:#333;font-family:'Consolas',monospace;">Example:
 &lt;field name="x_amount" options="{'skip_check_requirement': True}"/&gt;</pre>
         </li>
     </ul>
 
-    <h2 style="color: #1f4e79; font-size: 20px; margin-top: 25px; margin-bottom: 10px; border-bottom: 2px solid #1f4e79; display: inline-block; padding-bottom: 4px;">
+    <h2 style="color:#1f4e79;font-size:20px;margin-top:25px;margin-bottom:10px;border-bottom:2px solid #1f4e79;display:inline-block;padding-bottom:4px;">
         ⚡ Usage</h2>
-    <ul style="list-style: none !important; margin: 0 !important; padding-left: 0 !important;">
-        <li style="list-style-type: none !important; margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px;">
-            <span style="position: absolute; left: 0; color: #1f4e79; font-weight: bold;">✔</span>
+    <ul class="list-unstyled">
+        <li style="margin-bottom:12px;font-size:15px;">
+            <i class="fa fa-check" style="color:#1f4e79;margin-right:8px;"></i>
             When creating or editing a record with a required numeric field, users will see a warning if they enter 0 or
             leave the field blank.
         </li>
     </ul>
 
-    <h2 style="color: #1f4e79; font-size: 20px; margin-top: 25px; margin-bottom: 10px; border-bottom: 2px solid #1f4e79; display: inline-block; padding-bottom: 4px;">
+    <h2 style="color:#1f4e79;font-size:20px;margin-top:25px;margin-bottom:10px;border-bottom:2px solid #1f4e79;display:inline-block;padding-bottom:4px;">
         🏆 Benefits</h2>
-    <ul style="list-style: none !important; margin: 0 !important; padding-left: 0 !important;">
-        <li style="list-style-type: none !important; margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px;">
-            <span style="position: absolute; left: 0; color: #1f4e79; font-weight: bold;">✔</span>
+    <ul class="list-unstyled">
+        <li style="margin-bottom:12px;font-size:15px;">
+            <i class="fa fa-check" style="color:#1f4e79;margin-right:8px;"></i>
             Ensures numeric fields always have valid, non-zero values.
         </li>
-        <li style="list-style-type: none !important; margin-bottom: 12px; padding-left: 28px; position: relative; font-size: 15px;">
-            <span style="position: absolute; left: 0; color: #1f4e79; font-weight: bold;">✔</span>
+        <li style="margin-bottom:12px;font-size:15px;">
+            <i class="fa fa-check" style="color:#1f4e79;margin-right:8px;"></i>
             Reduces errors caused by missing or invalid numeric input.
         </li>
     </ul>
 
-    <div style="margin-top: 20px; padding: 15px; background-color: #eaf3ff; border-left: 4px solid #1f4e79; border-radius: 6px; font-size: 15px; color: #1f4e79;">
+    <div style="margin-top:20px;padding:15px;background-color:#eaf3ff;border-left:4px solid #1f4e79;border-radius:6px;font-size:15px;color:#1f4e79;">
         Install this module to enhance the behavior of numeric fields and enforce proper validation automatically.
     </div>
 </section>

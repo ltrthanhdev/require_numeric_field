@@ -4,7 +4,7 @@
     'author': 'LTrThanh',
     'depends': ['base', 'web'],
     'application': False,
-    'version': '18.1.0.2',
+    'version': '18.1.0.3',
     'license': 'AGPL-3',
     'support': 'ltrthanh.dev@gmail.com',
     'installable': True,
